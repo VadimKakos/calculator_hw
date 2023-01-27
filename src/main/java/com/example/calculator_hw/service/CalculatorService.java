@@ -15,16 +15,6 @@ public class CalculatorService {
         return a + b;
     }
 
-    public String massage(int a, int b, char process, int result) throws NullException {
-        if (checkNull(a, b) == true) {
-            throw new NullException("Данные введены неорретно");
-        }
-        String firstParam = "" + a;
-        String secondParam = "" + b;
-        String operation = "" + process;
-
-        return firstParam + operation + secondParam + "=" + (result + "");
-    }
 
     public int minus(int a, int b) {
         return a - b;
@@ -48,6 +38,13 @@ public class CalculatorService {
             return true;
         }
         return false;
+    }
+
+    public String massage(int a, int b, String operation, int result) throws NullException {
+        if (checkNull(a, b) == true) {
+            throw new NullException("Данные введены неорретно");
+        }
+        return String.format("%d %s %d = %d", a, operation, b, result);
     }
 
 }
