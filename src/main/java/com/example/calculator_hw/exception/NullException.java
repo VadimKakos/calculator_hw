@@ -1,4 +1,4 @@
-package com.example.calculator.exception;
+package com.example.calculator_hw.exception;
 
 public class NullException extends Exception {
     public NullException(String message) {

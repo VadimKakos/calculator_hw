@@ -1,8 +1,8 @@
-package com.example.calculator.controller;
+package com.example.calculator_hw.controller;
 
-import com.example.calculator.exception.DivNullException;
-import com.example.calculator.exception.NullException;
-import com.example.calculator.service.CalculatorService;
+import com.example.calculator_hw.exception.DivNullException;
+import com.example.calculator_hw.exception.NullException;
+import com.example.calculator_hw.service.CalculatorService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

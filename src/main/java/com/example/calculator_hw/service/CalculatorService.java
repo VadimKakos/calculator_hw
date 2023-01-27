@@ -1,7 +1,7 @@
-package com.example.calculator.service;
+package com.example.calculator_hw.service;
 
-import com.example.calculator.exception.DivNullException;
-import com.example.calculator.exception.NullException;
+import com.example.calculator_hw.exception.DivNullException;
+import com.example.calculator_hw.exception.NullException;
 import org.springframework.stereotype.Service;
 
 @Service
