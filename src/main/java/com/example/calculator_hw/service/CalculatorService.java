@@ -1,7 +1,7 @@
-package com.example.calculator.service;
+package com.example.calculator_hw.service;
 
-import com.example.calculator.exception.DivNullException;
-import com.example.calculator.exception.NullException;
+import com.example.calculator_hw.exception.DivNullException;
+import com.example.calculator_hw.exception.NullException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,16 +15,6 @@ public class CalculatorService {
         return a + b;
     }
 
-    public String massage(int a, int b, char process, int result) throws NullException {
-        if (checkNull(a, b) == true) {
-            throw new NullException("Данные введены неорретно");
-        }
-        String firstParam = "" + a;
-        String secondParam = "" + b;
-        String operation = "" + process;
-
-        return firstParam + operation + secondParam + "=" + (result + "");
-    }
 
     public int minus(int a, int b) {
         return a - b;
@@ -48,6 +38,13 @@ public class CalculatorService {
             return true;
         }
         return false;
+    }
+
+    public String massage(int a, int b, String operation, int result) throws NullException {
+        if (checkNull(a, b) == true) {
+            throw new NullException("Данные введены неорретно");
+        }
+        return String.format("%d %s %d = %d", a, operation, b, result);
     }
 
 }
