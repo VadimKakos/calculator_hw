@@ -1,4 +1,4 @@
-package com.example.calculator_hw.controller;
+package com.example.calculator_hw.service;
 
 import com.example.calculator_hw.exception.DivNullException;
 import com.example.calculator_hw.service.CalculatorService;
